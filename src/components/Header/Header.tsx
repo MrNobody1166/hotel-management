@@ -1,10 +1,11 @@
 import Link from "next/link";
-import {FaUserCircle} from "react-icons/fa"
-import {MdDarkMode} from "react-icons/md"
+import { FaUserCircle } from "react-icons/fa"
+import { MdDarkMode } from "react-icons/md"
 
 
 const Header = () => {
-  return <header className="py10 px-4 container mx-auto text-xl flex flex-wrap md:flex-nowrap items-center justify-between">
+  return (
+    <header className="py10 px-4 container mx-auto text-xl flex flex-wrap md:flex-nowrap items-center justify-between">
       <div className="flex items-center w-full md:2/3">
         <Link href='/' className="font-black text-tertiary-dark">
           Hotelzz
@@ -32,7 +33,8 @@ const Header = () => {
           <Link href="/">Contact</Link>
         </li>
       </ul>
-    </header>;
+    </header>
+  );
 };
 
 export default Header;
